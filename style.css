@@ -1,0 +1,331 @@
+* {
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	font-family: "Bahnschrift", "Arial", sans-serif;
+}
+
+:root {
+	font-size: 16px;
+	--main: #5befff;
+	--main-dark: #5bd2df;
+	--main-light: #7de4ef;
+	--dark: #10151e;
+	--dark-darker: #0a0d12;
+	--dark-lighter: #1b212b;
+	--gray-light: #c9cbcf;
+	--gray-dark: #676a71;
+	--grid: #EFEFEF;
+	
+	
+}
+
+body {
+	background-image: repeating-linear-gradient(var(--grid) 0 1px, transparent 1px 100%),
+	 repeating-linear-gradient(90deg, var(--grid) 0 1px, transparent 1px 100%);
+	background-size: 72px 72px;
+	background-position: center;
+}
+
+a {
+	color: white;
+	padding: 8px 16px;
+	border-radius: 8px;
+}
+
+.bg-dark {
+	background: var(--dark);
+}
+
+.bg-main {
+	background: var(--main);
+}
+
+.text-white {
+	color: #fff;
+}
+
+.p-1 {
+	padding: 8px;
+}
+
+.p-2 {
+	padding: 16px;
+}
+
+.p-3 {
+	padding: 24px;
+}
+
+.p-4 {
+	padding: 32px;
+}
+
+.p-5 {
+	padding: 64px;
+}
+
+.p-6 {
+	padding: 96px;
+}
+
+
+.my-1 {
+	margin-block: 8px;
+}
+
+.my-2 {
+	margin-block: 16px;
+}
+
+.my-3 {
+	margin-block: 24px;
+}
+
+.my-4 {
+	margin-block: 32px;
+}
+
+.my-5 {
+	margin-block: 64px;
+}
+
+.my-6 {
+	margin-block: 96px;
+}
+
+
+.mx-1 {
+	margin-inline: 8px;
+}
+
+.mx-2 {
+	margin-inline: 16px;
+}
+
+.mx-3 {
+	margin-inline: 24px;
+}
+
+.mx-4 {
+	margin-inline: 32px;
+}
+
+.mx-5 {
+	margin-inline: 64px;
+}
+
+.mx-6 {
+	margin-inline: 96px;
+}
+
+header {
+	height: 72px;
+	width: 95%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.container {
+	width: 95%;
+	max-width: 1440px;
+	margin:0 auto;
+}
+
+#toggle {
+	display: none;
+}
+
+.menu {
+	display: none;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.justify-center {
+	justify-content: center;
+}
+.justify-between {
+	justify-content: space-between;
+}
+
+.align-center {
+	align-items: center;
+}
+
+h1 {
+	font-size: clamp(2rem, 4vw, 4rem);
+	font-weight: bold;
+}
+
+h2 {
+	font-size: clamp(1.5rem, 3vw, 3rem);
+	font-weight: bold;
+}
+
+h3 {
+	font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+	font-weight: bold;
+}
+
+h4 {
+	font-size: clamp(1rem, 2vw, 2rem);
+	font-weight: normal;
+	
+}
+
+h5 {
+	font-size: clamp(0.75rem, 1.5vw, 1.5rem);
+	font-weight: normal;
+	
+}
+
+h6 {
+	font-size: clamp(1.125rem, 1.2vw, 1.2rem);
+	font-weight: normal;
+	
+}
+
+p {
+	font-size: 18px;
+	font-weight: light;
+	line-height: 1.5;
+	
+}
+
+.events {
+	min-height: 100vh;
+}
+
+.card-container {
+	gap: 32px;
+}
+
+.card {
+	width: 30%;
+	flex: 1 0 400px;
+	padding: 32px;
+	box-sizing: border-box;
+	border-radius: 12px;
+	border: solid 2px var(--main);
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.card > button {
+	padding: 8px 16px;
+	border: solid 1px var(--gray-dark);
+	background: var(--dark);
+	color: #fff;
+	border-radius: 8px;
+}
+
+.ribbon > h3:nth-child(1) {
+	background: var(--dark);
+	flex: 1;
+	width: 75%;
+}
+
+.ribbon > h3:nth-child(2) {
+	background: var(--main);
+	width: 25%;
+}
+
+.ribbon h3 {
+	text-align: center;
+	padding-block: 24px;	
+}
+
+.button-lg {
+	padding: 16px 32px;
+	font-size: 20px;
+	background:var(--dark);
+}
+
+#sponsors {
+	width: 75%;
+	margin-inline: auto;
+}
+
+#sponsors > img {
+	height: clamp(2rem, 4vw, 4rem);
+	margin: 24px;
+	object-fit: cover;
+}
+
+
+#partners {
+	width: 75%;
+	margin-inline: auto;
+}
+
+#partners > img {
+	height: clamp(2rem, 12vw, 10rem);
+	margin-inline: 48px;
+	margin-block: 48px;
+	object-fit: cover;
+	mix-blend-mode: multiply;
+}
+
+.text-center {
+	text-align: center;
+}
+
+
+@media (max-width: 680px) {
+	.container {
+		width: 95%;
+		margin:0 auto;
+	}
+	.menu {
+		display: block;
+	}
+	.menu  {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+
+
+.menu > span {
+	height: 2px;
+	width: 24px;
+	background: #fff;
+}
+
+	nav > div {
+		right: 0;
+		left: 0;
+		top: 72px;
+		flex-direction: column;
+		position: absolute;
+		height: inherit;
+		display: none;
+		background: var(--dark);
+	}
+	
+	nav > div > a {
+		padding: 24px;
+		background: var(--dark);
+	}
+	
+	#toggle:checked ~ div {
+		display: flex;
+	}
+	
+	#partners > img {
+		height: clamp(2rem, 12vw, 10rem);
+		margin-inline: 12px;
+		margin-block: 12px;
+		object-fit: cover;
+		mix-blend-mode: multiply;
+	}
+	
+	
+}
